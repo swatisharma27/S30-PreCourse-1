@@ -11,12 +11,20 @@ class Stack:
         self.size = 0
         
     def push(self, data):
+        '''
+        TC: O(1)
+        AS: O(1)
+        '''
         temp = Node(data)
         temp.next = self.head
         self.head = temp
         self.size = self.size + 1
         
     def pop(self):
+        '''
+        TC: O(1)
+        AS: O(1)
+        '''
         if self.head is None:
             return math.inf
         res = self.head.data
